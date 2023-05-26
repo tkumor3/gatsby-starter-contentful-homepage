@@ -1,0 +1,78 @@
+[
+  {
+    "ts": "2023-05-26T09:01:37.643Z",
+    "level": "error",
+    "error": {
+      "name": "Conflict",
+      "entity": {
+        "name": "Gatsby Builds",
+        "url": "https://webhook.gatsbyjs.com/hooks/data_source/publish/29e7da1b-50ea-44c6-a2b5-6b5411eb14eb",
+        "httpBasicUsername": null,
+        "topics": [
+          "ContentType.publish",
+          "Entry.publish",
+          "Asset.publish",
+          "ContentType.unpublish",
+          "Entry.unpublish",
+          "Asset.unpublish"
+        ],
+        "filters": null,
+        "transformation": null,
+        "active": true,
+        "sys": {
+          "type": "WebhookDefinition",
+          "id": "gatsby-builds",
+          "version": 0,
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "blm4zeeq0l7e"
+            }
+          },
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4mp7BUWgAkTDJ8ucasjjQx"
+            }
+          },
+          "createdAt": "2023-01-13T15:23:35Z",
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4mp7BUWgAkTDJ8ucasjjQx"
+            }
+          },
+          "updatedAt": "2023-01-13T15:23:35Z"
+        },
+        "headers": [
+        ]
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "Please pass sys.version as HTTP header \"X-Contentful-Version\".",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/nfyt71labhr2/webhook_definitions/gatsby-builds",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.4; feature library-import; sdk contentful-management.js/10.19.1; platform node.js/v18.16.0; os macOS/v18.16.0;",
+            "CF-Sequence": "3d39cf15-7c2b-45af-9a3c-918555e88845",
+            "Authorization": "Bearer ...JsUq8",
+            "user-agent": "node.js/v18.16.0",
+            "Accept-Encoding": "gzip",
+            "Content-Length": 338
+          },
+          "method": "put",
+          "payloadData": "{\"name\":\"Gatsby Builds\",\"url\":\"https://webhook.gatsbyjs.com/hooks/data_source/publish/29e7da1b-50ea-44c6-a2b5-6b5411eb14eb\",\"httpBasicUsername\":null,\"topics\":[\"ContentType.publish\",\"Entry.publish\",\"Asset.publish\",\"ContentType.unpublish\",\"Entry.unpublish\",\"Asset.unpublish\"],\"filters\":null,\"transformation\":null,\"active\":true,\"headers\":[]}"
+        },
+        "requestId": "f0424941-c0f4-4e1c-9b81-caec0260f53e"
+      }
+    }
+  }
+]

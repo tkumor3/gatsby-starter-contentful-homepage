@@ -1,0 +1,337 @@
+[
+  {
+    "ts": "2023-05-26T08:53:44.534Z",
+    "level": "error",
+    "error": {
+      "name": "AccessDenied",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "blm4zeeq0l7e"
+            }
+          },
+          "id": "homepageLinkGroup",
+          "type": "ContentType",
+          "createdAt": "2023-01-10T20:50:02.553Z",
+          "updatedAt": "2023-01-12T17:24:14.686Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "publishedAt": "2023-01-12T17:24:14.686Z",
+          "firstPublishedAt": "2023-01-10T20:50:16.462Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4mp7BUWgAkTDJ8ucasjjQx"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4mp7BUWgAkTDJ8ucasjjQx"
+            }
+          },
+          "publishedCounter": 4,
+          "version": 8,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4mp7BUWgAkTDJ8ucasjjQx"
+            }
+          }
+        },
+        "displayField": "name",
+        "name": "Homepage Link Group",
+        "description": "A group of links with a title",
+        "fields": [
+          {
+            "id": "name",
+            "name": "Name",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "links",
+            "name": "Links",
+            "type": "Array",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "items": {
+              "type": "Link",
+              "validations": [
+                {
+                  "linkContentType": [
+                    "navItem"
+                  ]
+                }
+              ],
+              "linkType": "Entry"
+            }
+          }
+        ]
+      },
+      "data": {
+        "status": 403,
+        "statusText": "Forbidden",
+        "message": "Forbidden",
+        "details": {
+          "reasons": [
+            "usageExceeded",
+            "You do not have permissions to create on ContentType, please contact your administrator for more information."
+          ]
+        },
+        "request": {
+          "url": "/spaces/nfyt71labhr2/environments/master/content_types/homepageLinkGroup",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.4; feature library-import; sdk contentful-management.js/10.19.1; platform node.js/v18.16.0; os macOS/v18.16.0;",
+            "CF-Sequence": "93a0c7d0-1ac4-4ef6-aa81-b5feb71d6d10",
+            "Authorization": "Bearer ...wmmgY",
+            "user-agent": "node.js/v18.16.0",
+            "Accept-Encoding": "gzip",
+            "Content-Length": 457
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"name\",\"name\":\"Homepage Link Group\",\"description\":\"A group of links with a title\",\"fields\":[{\"id\":\"name\",\"name\":\"Name\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"links\",\"name\":\"Links\",\"type\":\"Array\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false,\"items\":{\"type\":\"Link\",\"validations\":[{\"linkContentType\":[\"navItem\"]}],\"linkType\":\"Entry\"}}]}"
+        },
+        "requestId": "d3ae8536-475c-4ebe-9eb4-a62223603262"
+      }
+    }
+  },
+  {
+    "ts": "2023-05-26T08:55:14.198Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "original": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "blm4zeeq0l7e"
+              }
+            },
+            "id": "3oq0lV1XsqCCdhOqf0MRmn",
+            "type": "Entry",
+            "createdAt": "2023-01-10T20:51:29.303Z",
+            "updatedAt": "2023-01-12T17:25:53.657Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 7,
+            "publishedAt": "2023-01-12T17:25:53.657Z",
+            "firstPublishedAt": "2023-01-10T20:52:11.263Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4mp7BUWgAkTDJ8ucasjjQx"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4mp7BUWgAkTDJ8ucasjjQx"
+              }
+            },
+            "publishedCounter": 4,
+            "version": 8,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4mp7BUWgAkTDJ8ucasjjQx"
+              }
+            },
+            "automationTags": [
+            ],
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "homepageLinkGroup"
+              }
+            }
+          },
+          "fields": {
+            "name": {
+              "en-US": "Products"
+            },
+            "links": {
+              "en-US": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Entry",
+                    "id": "3HRx4NBErpaUkprPQ8m7Sx"
+                  }
+                },
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Entry",
+                    "id": "3dxvwGKNjISuIxiXNRPEoE"
+                  }
+                },
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Entry",
+                    "id": "7ohDn28pjA1jyZUYxF2Zkt"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "transformed": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "blm4zeeq0l7e"
+              }
+            },
+            "id": "3oq0lV1XsqCCdhOqf0MRmn",
+            "type": "Entry",
+            "createdAt": "2023-01-10T20:51:29.303Z",
+            "updatedAt": "2023-01-12T17:25:53.657Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 7,
+            "publishedAt": "2023-01-12T17:25:53.657Z",
+            "firstPublishedAt": "2023-01-10T20:52:11.263Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4mp7BUWgAkTDJ8ucasjjQx"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4mp7BUWgAkTDJ8ucasjjQx"
+              }
+            },
+            "publishedCounter": 4,
+            "version": 8,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4mp7BUWgAkTDJ8ucasjjQx"
+              }
+            },
+            "automationTags": [
+            ],
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "homepageLinkGroup"
+              }
+            }
+          },
+          "fields": {
+            "name": {
+              "en-US": "Products"
+            },
+            "links": {
+              "en-US": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Entry",
+                    "id": "3HRx4NBErpaUkprPQ8m7Sx"
+                  }
+                },
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Entry",
+                    "id": "3dxvwGKNjISuIxiXNRPEoE"
+                  }
+                },
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Entry",
+                    "id": "7ohDn28pjA1jyZUYxF2Zkt"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "The content type you sent could not be found or was not activated.",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/nfyt71labhr2/environments/master/entries/3oq0lV1XsqCCdhOqf0MRmn",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.4; feature library-import; sdk contentful-management.js/10.19.1; platform node.js/v18.16.0; os macOS/v18.16.0;",
+            "CF-Sequence": "93a0c7d0-1ac4-4ef6-aa81-b5feb71d6d10",
+            "Authorization": "Bearer ...wmmgY",
+            "user-agent": "node.js/v18.16.0",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Content-Type": "homepageLinkGroup",
+            "Content-Length": 302
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"name\":{\"en-US\":\"Products\"},\"links\":{\"en-US\":[{\"sys\":{\"type\":\"Link\",\"linkType\":\"Entry\",\"id\":\"3HRx4NBErpaUkprPQ8m7Sx\"}},{\"sys\":{\"type\":\"Link\",\"linkType\":\"Entry\",\"id\":\"3dxvwGKNjISuIxiXNRPEoE\"}},{\"sys\":{\"type\":\"Link\",\"linkType\":\"Entry\",\"id\":\"7ohDn28pjA1jyZUYxF2Zkt\"}}]}}}"
+        },
+        "requestId": "8360ccd2-0df2-43e0-b32d-bd5808893cd9"
+      }
+    }
+  }
+]
